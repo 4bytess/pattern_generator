@@ -5,4 +5,5 @@ This is a python3 script that automates the genereation of unique patterns and c
 ## USAGE
 
 > `-m <mode>` Specify the mode
+
     `-m generate`
