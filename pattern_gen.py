@@ -60,14 +60,20 @@ def getOffset(match):
     if found == 0:
         print("\n%s[!]%s couldnt found that match\n" % (red, end))
 
-if args.mode == "generate":
+def main():
+
+    if args.mode == "generate":
     
-    print("\n%s[*]%s generating %s%s%s bytes of pattern...\n\n" % (green, end, green, int(value), end))
+        print("\n%s[*]%s generating %s%s%s bytes of pattern...\n\n" % (green, end, green, int(value), end))
 
-    print(generate(int(value)))
+        print(generate(int(value)))
 
 
-if args.mode == "offset":
+    if args.mode == "offset":
     
-    getOffset(value)
+        getOffset(value)
 
+
+if __name__ == '__main__':
+
+    main()
